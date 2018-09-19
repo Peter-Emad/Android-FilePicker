@@ -1,5 +1,6 @@
 package droidninja.filepicker;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
@@ -36,6 +37,7 @@ public class MediaDetailsActivity extends BaseFilePickerActivity implements File
   private MenuItem selectAllItem;
   private PhotoDirectory photoDirectory;
 
+  @SuppressLint("MissingSuperCall")
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState, R.layout.activity_media_details);
   }

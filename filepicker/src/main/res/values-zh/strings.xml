@@ -19,4 +19,10 @@
     <string name="word_title">DOC</string>
     <string name="excel_title">XLS</string>
     <string name="txt_title">TXT</string>
+    <string name="videos">Vídeos</string>
+    <string name="images">Imágenes</string>
+    <string name="all_photos">Todas las fotos</string>
+    <string name="all_videos">Todos los vídeos</string>
+    <string name="all_files">Todos los ficheros</string>
+
 </resources>

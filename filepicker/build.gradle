@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: "com.jfrog.bintray"
+//apply plugin: "com.jfrog.bintray"
+apply plugin: 'com.novoda.bintray-release'
 
 version = "2.1.5"
 
@@ -97,7 +98,7 @@ Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
 // https://github.com/bintray/gradle-bintray-plugin
-bintray {
+/*bintray {
     user = properties.getProperty("bintray.user")
     key = properties.getProperty("bintray.apikey")
 
@@ -118,4 +119,19 @@ bintray {
             }
         }
     }
+}*/
+
+publish {
+
+    def groupProjectID = 'com.droidninja.filepicker'
+    def artifactProjectID = 'AndroidFilePicker'
+    def publishVersionID = '0.1.0'
+
+    userOrg = 'linkdev'
+    repoName = 'AndroidFilePicker'
+    groupId = groupProjectID
+    artifactId = artifactProjectID
+    publishVersion = publishVersionID
+    desc = 'Android File picker library'
+    website = 'https://github.com/Peter-Emad/Android-FilePicker'
 }
