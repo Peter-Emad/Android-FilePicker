@@ -125,7 +125,7 @@ publish {
 
     def groupProjectID = 'com.droidninja.filepicker'
     def artifactProjectID = 'AndroidFilePicker'
-    def publishVersionID = '0.1.0'
+    def publishVersionID = '1.1'
 
     userOrg = 'linkdev'
     repoName = 'AndroidFilePicker'
